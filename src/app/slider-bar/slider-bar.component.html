@@ -1,0 +1,21 @@
+<h1>RAPID <span>AI</span></h1>
+<div class="slider-container">
+  <div class="slider-track" #sliderTrack>
+    <div
+      class="slider-thumb"
+      #sliderThumb
+      (mousedown)="onMouseDown($event)"
+    ></div>
+  </div>
+  <!-- Do not use range slider... be 2 ez-->
+  <div class="slider-ticks">
+    <div
+      *ngFor="let tick of ticks"
+      class="slider-tick"
+      [class.active-tick]="isActiveTick(tick)"
+      (click)="onTickClick(tick)"
+    >
+      <span class="ticker">{{ tick }}</span>
+    </div>
+  </div>
+</div>

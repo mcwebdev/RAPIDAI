@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #222222;
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  color: #fff;
+}
+h1 span {
+  color: #aba8a8;
+}
+app-slider-bar {
+  margin: 100px auto;
+  width: 500px;
+  display: block;
+  padding: 50px;
+  background-color: #000;
+  border-radius: 8px;
+  border: solid 1px #393838;
+}
